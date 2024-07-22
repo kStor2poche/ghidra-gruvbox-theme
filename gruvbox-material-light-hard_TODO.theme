@@ -2,9 +2,9 @@
 #   Info   #
 #**--  --**#
 
-name = Gruvbox Dark Hard
-lookAndFeel = Flat Dark
-useDarkDefaults = true
+name = Gruvbox Material Light Hard
+lookAndFeel = Flat Light
+useDarkDefaults = false
 
 
 #**--           --**#
