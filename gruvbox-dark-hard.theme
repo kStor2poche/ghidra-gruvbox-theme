@@ -12,7 +12,7 @@ useDarkDefaults = true
 #**--           --**#
 
 #-- Code font --#
-font.monospaced = BlexMono Nerd Font Mono-PLAIN-14
+#font.monospaced = BlexMono Nerd Font Mono-PLAIN-14
 
 font.decompiler     = font.monospaced
 font.listing.base   = font.monospaced
@@ -27,8 +27,7 @@ font.listing.base   = font.monospaced
 #**--         --**#
 
 color.gruvboxdh.bg = #1d2021
-color.gruvboxdh.bg-hover = #1c1816
-color.gruvboxdh.bg-secondary = #2d3031
+color.gruvboxdh.bg-secondary = #3c3836
 color.gruvboxdh.bg-tertiary = #0d1011
 color.gruvboxdh.bg-secondary-red = #170808
 color.gruvboxdh.bg-secondary-orange = #d65d0e
@@ -119,11 +118,11 @@ color.fg                 = color.gruvboxdh.fg
 color.bg                 = color.gruvboxdh.bg
 color.bg.currentline     = color.gruvboxdh.black
 color.bg.selection       = color.gruvboxdh.black
-color.bg.undefined       = color.gruvboxdh.black
+color.bg.undefined       = color.gruvboxdh.bg
 color.fg.header.active   = color.gruvboxdh.fg
 color.bg.header.active   = color.gruvboxdh.orange
 color.fg.header.inactive = color.gruvboxdh.fg
-color.bg.header.inactive = color.gruvboxdh.black
+color.bg.header.inactive = color.gruvboxdh.bg
 
 color.bg.filterfield = color.gruvboxdh.black
 color.fg.filterfield = color.gruvboxdh.white-l
@@ -155,6 +154,11 @@ color.bg.uneditable             = color.gruvboxdh.black-l
 
 [color]system.color.bg.border = color.gruvboxdh.bg-secondary
  
+#**--        --**#
+#   Laf colors   #
+#**--        --**#
+
+[color]laf.palette.color.32 = color.gruvboxdh.bg
 
 #**--            --**#
 #   Ghidra palette   #
