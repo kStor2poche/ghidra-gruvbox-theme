@@ -18,6 +18,8 @@ font.monospaced = Font Name-STYLE-Size
 ```
 > _where `Size` is a single integer (in whichever unit ghidra uses), and `STYLE`, one of `PLAIN`, `BOLD` or `ITALIC`_
 
+:warning: Note that you will need to import the theme again into ghidra in order for the modifications to be taken into account.
+
 ### Comment font styling
 You can as far as I know only style those for the listing view.  
 To do so, in the CodeBrowser tool's menu, select `Edit` &rarr; `Tool options`, then select on the left list `Listing Display`
