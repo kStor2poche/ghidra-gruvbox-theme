@@ -26,37 +26,46 @@ font.listing.base   = font.monospaced
 #   Main colors   #
 #**--         --**#
 
-color.gruvbox.bg = #f2e5bc
-color.gruvbox.bg-secondary = #ebdbb2
-color.gruvbox.bg-tertiary = #0d1011
-color.gruvbox.bg-secondary-red = #170808
-color.gruvbox.bg-secondary-orange = #d65d0e
-color.gruvbox.bg-secondary-blue = #071016
-color.gruvbox.bg-secondary-yellow = #171808
-color.gruvbox.fg = #3c3836
-color.gruvbox.fg-secondary = #ab9b72
+#-- bg colors, light to dark --#
+color.gruvbox.bg = color.gruvbox.bg0
+color.gruvbox.bg0_h = #f9f5d7
+color.gruvbox.bg0 = #fbf1c7
+color.gruvbox.bg0_s = #f2e5bc
+color.gruvbox.bg1 = #ebdbb2
+color.gruvbox.bg2 = #d5c4a1
+color.gruvbox.bg3 = #bdae93
+color.gruvbox.bg4 = #a89984
 
-color.gruvbox.selec-fg = #ebdbb2
-color.gruvbox.selec-bg = #d65d0e
+#-- fg colors, dark to light --#
+color.gruvbox.fg = color.gruvbox.fg1
+color.gruvbox.fg0 = #282828
+color.gruvbox.fg1 = #3c3836
+color.gruvbox.fg2 = #504945
+color.gruvbox.fg3 = #665c54
+color.gruvbox.fg4 = #7c6f64
 
-color.gruvbox.black = #ebdbb2
-color.gruvbox.black-l = #928374
+#-- selection colors --#
+color.gruvbox.gray = #928374
+color.gruvbox.gray-alt = color.gruvbox.fg4
 color.gruvbox.red = #cc241d
-color.gruvbox.red-l = #9d0006
+color.gruvbox.red-alt = #9d0005
 color.gruvbox.green = #98971a
-color.gruvbox.green-l = #79740e
+color.gruvbox.green-alt = #79740e
 color.gruvbox.yellow = #d79921
-color.gruvbox.yellow-l = #b57614
+color.gruvbox.yellow-alt = #b57614
 color.gruvbox.blue = #458588
-color.gruvbox.blue-l = #076678
+color.gruvbox.blue-alt = #076678
 color.gruvbox.purple = #b16286
-color.gruvbox.purple-l = #8f3f71
+color.gruvbox.purple-alt = #8f3f71
 color.gruvbox.cyan = #689d6a
-color.gruvbox.cyan-l = #427b58
-color.gruvbox.white = #7c6f64
-color.gruvbox.white-l = #3c3836
+color.gruvbox.cyan-alt = #427b58
+color.gruvbox.orange = #d65d0e
+color.gruvbox.orange-alt = #af3a03
 
-color.gruvbox.orange = color.gruvbox.selec-bg
+
+#-- selection colors --#
+color.gruvbox.selec-fg = color.gruvbox.fg1
+color.gruvbox.selec-bg = color.gruvbox.orange
 
 
 #**--           --**#
@@ -67,74 +76,74 @@ color.gruvbox.orange = color.gruvbox.selec-bg
 color.cursor.focused = color.fg
 
 #-- Decompiler --#
-color.fg.decompiler.comment         = color.gruvbox.black-l
-color.fg.decompiler.constant        = color.gruvbox.purple-l
-color.fg.decompiler.function.name   = color.gruvbox.green-l
-color.fg.decompiler.keyword         = color.gruvbox.red-l
-color.fg.decompiler.type            = color.gruvbox.yellow-l
+color.fg.decompiler.comment         = color.gruvbox.gray
+color.fg.decompiler.constant        = color.gruvbox.purple-alt
+color.fg.decompiler.function.name   = color.gruvbox.green-alt
+color.fg.decompiler.keyword         = color.gruvbox.red-alt
+color.fg.decompiler.type            = color.gruvbox.yellow-alt
 color.fg.decompiler.variable        = color.gruvbox.fg
-color.fg.decompiler.parameter       = color.gruvbox.blue-l
-color.fg.decompiler.global          = color.gruvbox.blue-l
+color.fg.decompiler.parameter       = color.gruvbox.blue-alt
+color.fg.decompiler.global          = color.gruvbox.blue-alt
 color.fg.decompiler.error           = color.gruvbox.red
-color.fg.decompiler.special         = color.gruvbox.cyan-l
+color.fg.decompiler.special         = color.gruvbox.cyan-alt
 
 #-- Listing --#
-color.fg.listing.comment.auto           = color.gruvbox.black-l
-color.fg.listing.comment.eol            = color.gruvbox.black-l
-color.fg.listing.comment.plate          = color.gruvbox.black-l
-color.fg.listing.comment.post           = color.gruvbox.black-l
-color.fg.listing.comment.pre            = color.gruvbox.black-l
-color.fg.listing.comment.ref.repeatable = color.gruvbox.white
-color.fg.listing.comment.repeatable     = color.gruvbox.white
+color.fg.listing.comment.auto           = color.gruvbox.gray
+color.fg.listing.comment.eol            = color.gruvbox.gray
+color.fg.listing.comment.plate          = color.gruvbox.gray
+color.fg.listing.comment.post           = color.gruvbox.gray
+color.fg.listing.comment.pre            = color.gruvbox.gray
+color.fg.listing.comment.ref.repeatable = color.gruvbox.fg4
+color.fg.listing.comment.repeatable     = color.gruvbox.fg4
 
-color.fg.listing.xref        = color.gruvbox.white
-color.fg.listing.xref.offcut = color.gruvbox.white
-color.fg.listing.xref.read   = color.gruvbox.white-l
+color.fg.listing.xref        = color.gruvbox.fg4
+color.fg.listing.xref.offcut = color.gruvbox.fg4
+color.fg.listing.xref.read   = color.gruvbox.fg1
 
 color.fg.listing.address                = color.gruvbox.blue
 color.fg.listing.bytes                  = color.gruvbox.cyan
 
-color.fg.listing.constant               = color.gruvbox.purple-l
-color.fg.listing.ext.entrypoint         = color.gruvbox.red-l
-color.fg.listing.ext.ref.resolved       = color.gruvbox.blue-l
-color.fg.listing.function.name          = color.gruvbox.green-l
-color.fg.listing.function.param.dynamic = color.gruvbox.purple-l
-color.fg.listing.function.tag           = color.gruvbox.red-l
-color.fg.listing.function.variable      = color.gruvbox.white-l
-color.fg.listing.label.local            = color.gruvbox.red-l
-color.fg.listing.label.primary          = color.gruvbox.red-l
-color.fg.listing.mnemonic               = color.gruvbox.cyan-l
-color.fg.listing.mnemonic.override      = color.gruvbox.white-l
-color.fg.listing.mnemonic.unimplemented = color.gruvbox.black-l
-color.fg.listing.underline              = color.gruvbox.blue-l
+color.fg.listing.constant               = color.gruvbox.purple-alt
+color.fg.listing.ext.entrypoint         = color.gruvbox.red-alt
+color.fg.listing.ext.ref.resolved       = color.gruvbox.blue-alt
+color.fg.listing.function.name          = color.gruvbox.green-alt
+color.fg.listing.function.param.dynamic = color.gruvbox.purple-alt
+color.fg.listing.function.tag           = color.gruvbox.red-alt
+color.fg.listing.function.variable      = color.gruvbox.fg1
+color.fg.listing.label.local            = color.gruvbox.red-alt
+color.fg.listing.label.primary          = color.gruvbox.red-alt
+color.fg.listing.mnemonic               = color.gruvbox.cyan-alt
+color.fg.listing.mnemonic.override      = color.gruvbox.fg1
+color.fg.listing.mnemonic.unimplemented = color.gruvbox.gray
+color.fg.listing.underline              = color.gruvbox.blue-alt
 color.fg.listing.ext.ref.unresolved     = color.gruvbox.red
-color.fg.listing.label.non.primary      = color.gruvbox.green-l
-color.fg.listing.register               = color.gruvbox.yellow-l
-color.fg.listing.block.start            = color.gruvbox.yellow-l
-color.fg.listing.tabs.text.selected     = color.gruvbox.red-l
+color.fg.listing.label.non.primary      = color.gruvbox.green-alt
+color.fg.listing.register               = color.gruvbox.yellow-alt
+color.fg.listing.block.start            = color.gruvbox.yellow-alt
+color.fg.listing.tabs.text.selected     = color.gruvbox.red-alt
 
 #-- General vars for other modules --#
 color.fg                 = color.gruvbox.fg
-color.bg                 = color.gruvbox.bg
-color.bg.currentline     = color.gruvbox.black
-color.bg.selection       = color.gruvbox.black
-color.bg.undefined       = color.gruvbox.bg
+color.bg                 = color.gruvbox.bg0_s
+color.bg.currentline     = color.gruvbox.bg1
+color.bg.selection       = color.gruvbox.bg1
+color.bg.undefined       = color.gruvbox.bg0_s
 color.fg.header.active   = color.gruvbox.fg
 color.bg.header.active   = color.gruvbox.orange
 color.fg.header.inactive = color.gruvbox.fg
-color.bg.header.inactive = color.gruvbox.bg
+color.bg.header.inactive = color.gruvbox.bg0_s
 
-color.bg.filterfield = color.gruvbox.black
-color.fg.filterfield = color.gruvbox.white-l
+color.bg.filterfield = color.gruvbox.bg1
+color.fg.filterfield = color.gruvbox.fg1
 
 #-- Display methods --#
-color.bg.table.alt        = color.gruvbox.black
+color.bg.table.alt        = color.gruvbox.bg1
 color.bg.selection.bundle = color.gruvbox.blue
-color.bg.tree             = color.bg
+color.bg.tree             = color.bg0_s
 
 color.bg.table.selection.bundle = color.gruvbox.orange
 color.bg.tree.selected          = color.gruvbox.orange
-color.bg.uneditable             = color.gruvbox.black-l
+color.bg.uneditable             = color.gruvbox.gray
 
 
 #**--           --**#
@@ -142,15 +151,15 @@ color.bg.uneditable             = color.gruvbox.black-l
 #**--           --**#
 
 [color]system.color.fg.control       = color.gruvbox.fg
-[color]system.color.bg.control       = color.gruvbox.bg
+[color]system.color.bg.control       = color.gruvbox.bg0_s
 [color]system.color.fg.selected.view = color.gruvbox.selec-fg
 [color]system.color.bg.selected.view = color.gruvbox.orange
 [color]system.color.fg.tooltip       = color.gruvbox.fg
-[color]system.color.bg.tooltip       = color.gruvbox.bg
+[color]system.color.bg.tooltip       = color.gruvbox.bg0_s
 [color]system.color.fg.view          = color.gruvbox.fg
-[color]system.color.bg.view          = color.gruvbox.bg
+[color]system.color.bg.view          = color.gruvbox.bg0_s
 
-[color]system.color.fg.disabled = color.gruvbox.white
+[color]system.color.fg.disabled = color.gruvbox.fg4
 
 [color]system.color.bg.border = color.gruvbox.bg-secondary
 
@@ -179,61 +188,61 @@ color.bg.uneditable             = color.gruvbox.black-l
 #**--            --**#
 
 color.palette.aliceblue             = #d5c4a1
-color.palette.black	                = color.gruvbox.black
+color.palette.black	                = color.gruvbox.bg1
 color.palette.blue                  = color.gruvbox.blue
-color.palette.blueviolet            = color.gruvbox.purple-l
+color.palette.blueviolet            = color.gruvbox.purple-alt
 color.palette.cornflowerblue        = color.gruvbox.blue
-color.palette.cornsilk	            = color.gruvbox.white
-color.palette.crimson	            = color.gruvbox.purple-l
-color.palette.cyan	                = color.gruvbox.blue-l
+color.palette.cornsilk	            = color.gruvbox.fg4
+color.palette.crimson	            = color.gruvbox.purple-alt
+color.palette.cyan	                = color.gruvbox.blue-alt
 color.palette.darkcyan	            = color.gruvbox.blue
-color.palette.darkgray	            = color.gruvbox.white
+color.palette.darkgray	            = color.gruvbox.fg4
 color.palette.darkgreen	            = color.gruvbox.cyan
 color.palette.darkkhaki	            = color.gruvbox.green
 color.palette.darkorange	        = color.gruvbox.orange
-color.palette.darkred	            = color.gruvbox.red-l
+color.palette.darkred	            = color.gruvbox.red-alt
 color.palette.darkslategray	        = color.gruvbox.blue
-color.palette.dodgerblue	        = color.gruvbox.blue-l
+color.palette.dodgerblue	        = color.gruvbox.blue-alt
 color.palette.error	                = color.gruvbox.red
-color.palette.gold	                = color.gruvbox.yellow-l
-color.palette.gray                  = color.gruvbox.black-l
-color.palette.green	                = color.gruvbox.green-l
+color.palette.gold	                = color.gruvbox.yellow-alt
+color.palette.gray                  = color.gruvbox.gray
+color.palette.green	                = color.gruvbox.green-alt
 color.palette.greenyellow	        = color.gruvbox.cyan
 color.palette.highlight.transparent.yellow	= #fffacd40
-color.palette.hint	                = color.gruvbox.white
+color.palette.hint	                = color.gruvbox.fg4
 color.palette.indigo                = color.gruvbox.purple
 color.palette.khaki	                = color.gruvbox.fg
 color.palette.lavender	            = color.gruvbox.purple
-color.palette.lemonchiffon	        = color.gruvbox.yellow-l
+color.palette.lemonchiffon	        = color.gruvbox.yellow-alt
 color.palette.lightcoral	        = color.gruvbox.red
-color.palette.lightcornflowerblue	= color.gruvbox.blue-l
-color.palette.lightgray	            = color.gruvbox.black-l
+color.palette.lightcornflowerblue	= color.gruvbox.blue-alt
+color.palette.lightgray	            = color.gruvbox.gray
 color.palette.lightgreen	        = color.gruvbox.green
-color.palette.lightpink	            = color.gruvbox.purple-l
-color.palette.lightpurple	        = color.gruvbox.purple-l
-color.palette.lightskyblue	        = color.gruvbox.blue-l
+color.palette.lightpink	            = color.gruvbox.purple-alt
+color.palette.lightpurple	        = color.gruvbox.purple-alt
+color.palette.lightskyblue	        = color.gruvbox.blue-alt
 color.palette.lightsteelblue	    = color.gruvbox.blue
-color.palette.lime	                = color.gruvbox.cyan-l
-color.palette.limegreen	            = color.gruvbox.green-l
-color.palette.magenta	            = color.gruvbox.purple-l
-color.palette.maroon	            = color.gruvbox.red-l
-color.palette.mistyrose	            = color.gruvbox.purple-l
+color.palette.lime	                = color.gruvbox.cyan-alt
+color.palette.limegreen	            = color.gruvbox.green-alt
+color.palette.magenta	            = color.gruvbox.purple-alt
+color.palette.maroon	            = color.gruvbox.red-alt
+color.palette.mistyrose	            = color.gruvbox.purple-alt
 color.palette.navy                  = color.gruvbox.cyan
 color.palette.nocolor	            = #ffffff00
 color.palette.olive	                = color.gruvbox.green
 color.palette.orange	            = color.gruvbox.orange
 color.palette.palegreen	            = color.gruvbox.blue
-color.palette.pink	                = color.gruvbox.purple-l
+color.palette.pink	                = color.gruvbox.purple-alt
 color.palette.purple	            = color.gruvbox.purple
 color.palette.red	                = color.gruvbox.red
 color.palette.saddlebrown	        = color.gruvbox.fg
-color.palette.silver	            = color.gruvbox.white
+color.palette.silver	            = color.gruvbox.fg4
 color.palette.slateblue	            = color.gruvbox.blue
 color.palette.steelblue	            = color.gruvbox.blue
-color.palette.tan	                = color.gruvbox.black-l
-color.palette.teal	                = color.gruvbox.cyan-l
-color.palette.white	                = color.gruvbox.white
+color.palette.tan	                = color.gruvbox.gray
+color.palette.teal	                = color.gruvbox.cyan-alt
+color.palette.white	                = color.gruvbox.fg4
 color.palette.yellow                = color.gruvbox.yellow
-color.palette.yellowgreen	        = color.gruvbox.green-l
+color.palette.yellowgreen	        = color.gruvbox.green-alt
 
 # vim:ft=toml
