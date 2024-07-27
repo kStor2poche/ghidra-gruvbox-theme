@@ -62,9 +62,8 @@ color.gruvbox.cyan-alt = #427b58
 color.gruvbox.orange = #d65d0e
 color.gruvbox.orange-alt = #af3a03
 
-
 #-- selection colors --#
-color.gruvbox.selec-fg = color.gruvbox.fg1
+color.gruvbox.selec-fg = color.gruvbox.bg1
 color.gruvbox.selec-bg = color.gruvbox.orange
 
 
@@ -128,7 +127,7 @@ color.bg                 = color.gruvbox.bg0_s
 color.bg.currentline     = color.gruvbox.bg1
 color.bg.selection       = color.gruvbox.bg1
 color.bg.undefined       = color.gruvbox.bg0_s
-color.fg.header.active   = color.gruvbox.fg
+color.fg.header.active   = color.gruvbox.selec-fg
 color.bg.header.active   = color.gruvbox.orange
 color.fg.header.inactive = color.gruvbox.fg
 color.bg.header.inactive = color.gruvbox.bg0_s
@@ -139,7 +138,7 @@ color.fg.filterfield = color.gruvbox.fg1
 #-- Display methods --#
 color.bg.table.alt        = color.gruvbox.bg1
 color.bg.selection.bundle = color.gruvbox.blue
-color.bg.tree             = color.bg0_s
+color.bg.tree             = color.bg
 
 color.bg.table.selection.bundle = color.gruvbox.orange
 color.bg.tree.selected          = color.gruvbox.orange
@@ -161,7 +160,7 @@ color.bg.uneditable             = color.gruvbox.gray
 
 [color]system.color.fg.disabled = color.gruvbox.fg4
 
-[color]system.color.bg.border = color.gruvbox.bg-secondary
+[color]system.color.bg.border = color.gruvbox.bg1
 
 #**--        --**#
 #   Laf colors   #

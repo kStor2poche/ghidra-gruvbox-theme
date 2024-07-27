@@ -63,7 +63,7 @@ color.gruvbox.orange = #d65d0e
 color.gruvbox.orange-alt = #af3a03
 
 #-- selection colors --#
-color.gruvbox.selec-fg = color.gruvbox.fg1
+color.gruvbox.selec-fg = color.gruvbox.bg1
 color.gruvbox.selec-bg = color.gruvbox.orange
 
 
@@ -127,7 +127,7 @@ color.bg                 = color.gruvbox.bg0_h
 color.bg.currentline     = color.gruvbox.bg1
 color.bg.selection       = color.gruvbox.bg1
 color.bg.undefined       = color.gruvbox.bg0_h
-color.fg.header.active   = color.gruvbox.fg
+color.fg.header.active   = color.gruvbox.selec-fg
 color.bg.header.active   = color.gruvbox.orange
 color.fg.header.inactive = color.gruvbox.fg
 color.bg.header.inactive = color.gruvbox.bg0_h
@@ -138,7 +138,7 @@ color.fg.filterfield = color.gruvbox.fg1
 #-- Display methods --#
 color.bg.table.alt        = color.gruvbox.bg1
 color.bg.selection.bundle = color.gruvbox.blue
-color.bg.tree             = color.bg0_h
+color.bg.tree             = color.bg
 
 color.bg.table.selection.bundle = color.gruvbox.orange
 color.bg.tree.selected          = color.gruvbox.orange
@@ -152,7 +152,7 @@ color.bg.uneditable             = color.gruvbox.gray
 [color]system.color.fg.control       = color.gruvbox.fg
 [color]system.color.bg.control       = color.gruvbox.bg0_h
 [color]system.color.fg.selected.view = color.gruvbox.selec-fg
-[color]system.color.bg.selected.view = color.gruvbox.orange-alt
+[color]system.color.bg.selected.view = color.gruvbox.orange
 [color]system.color.fg.tooltip       = color.gruvbox.fg
 [color]system.color.bg.tooltip       = color.gruvbox.bg0_h
 [color]system.color.fg.view          = color.gruvbox.fg
@@ -160,7 +160,7 @@ color.bg.uneditable             = color.gruvbox.gray
 
 [color]system.color.fg.disabled = color.gruvbox.gray
 
-[color]system.color.bg.border = color.gruvbox.bg-secondary
+[color]system.color.bg.border = color.gruvbox.bg1
  
 #**--        --**#
 #   Laf colors   #
