@@ -22,9 +22,9 @@ font.listing.base   = font.monospaced
 # font.fg.listing.comment.auto        = font.global[ITALIC]
 
 
-#**--         --**#
-#   Main colors   #
-#**--         --**#
+#**--          --**#
+#   Theme colors   #
+#**--          --**#
 
 #-- bg colors, dark to light --#
 color.gruvbox.bg = color.gruvbox.bg0
@@ -44,7 +44,7 @@ color.gruvbox.fg2 = #d5c4a1
 color.gruvbox.fg3 = #bdae93
 color.gruvbox.fg4 = #a89984
 
-#-- selection colors --#
+#-- main colors --#
 color.gruvbox.gray = #928374
 color.gruvbox.gray-alt = color.gruvbox.fg4
 color.gruvbox.red = #cc241d
