@@ -6,13 +6,13 @@
 ## How to install
 In the project/main window's menu, select `Edit` &rarr; `Theme` &rarr; `Import…`.
 
-You can then navigate to the folder in which you downloaded or cloned this repo and select the one you wish (refer to [screenshots](#screenshots) for examples!)...
+You can then navigate to the folder in which you downloaded or cloned this repo and select the .theme file you prefer (refer to [screenshots](#screenshots) for examples!)...
 
 ... And you're good to go! If you still want to rice your ghidra a little bit more, the next section is for you!
 
 ## Further tuning
 ### Fonts
-You can provide your own font for the decompiler, listing, and other places that use #a monospaced font at line 15 of each theme, uncommenting it and using the following format : 
+You can provide your own font for the decompiler, listing, and other places that use a monospaced font at line 15 of each theme, uncommenting it and using the following format : 
 ```ini
 font.monospaced = Font Name-STYLE-Size
 ```
